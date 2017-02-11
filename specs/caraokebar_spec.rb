@@ -34,4 +34,8 @@ class TestCaraoke < MiniTest::Test
     assert_equal("Club Tropicana", @caraokebar1.bar_name)
   end
 
+  def test_rep
+    assert_equal("Dive", @caraokebar1.reputation)
+  end
+
 end
