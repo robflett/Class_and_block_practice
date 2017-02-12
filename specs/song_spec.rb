@@ -9,6 +9,9 @@ class TestSong < MiniTest::Test
 
 def setup
   @song1 = Song.new("Like a Prayer", "Pop")
+  @song2 = Song.new("Fear of the Dark", "Heavy Metal")
+  @song3 = Song.new("Sunshine on Leith", "Pop")
+  @song4 = Song.new("Breathe", "RnB")
 
   @room1 = Room.new("Blue", 10, 10)
 

@@ -30,7 +30,7 @@ end
 
 def check_in
   checked_in = @guest
-  @capacity << checked_in #if !fish.nil? #.nil will return true if it is nil. the bang operator changes it to does not equal nil.
+  @capacity << checked_in 
   return @capacity
 end
 
