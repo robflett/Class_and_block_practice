@@ -9,8 +9,8 @@ class TestRoom < MiniTest::Test
 
 
   def setup()
-    @room1 = Room.new("Blue", 10, 10)
-    @room2 = Room.new("Midnight", 5, 10)
+    @room1 = Room.new("Blue", 10)
+    @room2 = Room.new("Midnight", 5)
 
   end
 
@@ -32,5 +32,5 @@ def test_guest_checked_out
   @room1.check_out
   assert_equal(0, @room1.room_capacity)
 end
-  
+
 end

@@ -7,7 +7,7 @@ class TestCaraoke < MiniTest::Test
 
   def setup
 
-        @caraokebar1 = Caraokebar.new("Club Tropicana", "Dive")
+        @caraokebar1 = Caraokebar.new("Club Tropicana", "Dive", 30)
 
 
   end
@@ -18,6 +18,10 @@ class TestCaraoke < MiniTest::Test
 
   def test_rep
     assert_equal("Dive", @caraokebar1.reputation)
+  end
+
+  def test_entry_fee
+    assert_equal(30, @caraokebar1.entry_fee)
   end
 
 

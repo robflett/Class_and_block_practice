@@ -2,12 +2,11 @@ require('pry')
 
 class Room
 
-  attr_reader :room_name, :max_size, :entry_fee
+  attr_reader :room_name, :max_size
 
-  def initialize(room_name, max_size, entry_fee)
+  def initialize(room_name, max_size)
     @room_name = room_name
     @max_size = max_size
-    @entry_fee =  entry_fee
     @capacity = []
     @now_playing = []
   end
