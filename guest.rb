@@ -14,8 +14,6 @@ class Guest
 end
 
 
-
-
 #def pays_for_entry
 #end
 

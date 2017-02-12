@@ -39,4 +39,6 @@ class TestGuest < MiniTest::Test
     assert_equal("George", @guest1.guest_name)
   end
 
+
+
 end
