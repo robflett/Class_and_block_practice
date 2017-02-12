@@ -2,10 +2,11 @@ require('pry')
 
 class Song
 
-  attr_reader #:cakes
+  attr_reader :title, :genre
 
-  # def initialize(cakes)
-  #   @cakes = cakes
-  # end
+  def initialize(title, genre)
+    @title = title
+    @genre = genre
+  end
 
 end

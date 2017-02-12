@@ -12,9 +12,7 @@ class Caraokebar
 end
 
 
-# def print_name
-#   return @name
-# end
+
 
 #def opening_times
 #end

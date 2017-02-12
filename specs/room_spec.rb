@@ -5,26 +5,23 @@ require_relative( '../room' )
 
 class TestRoom < MiniTest::Test
 
- # def setup
-  #  # @cakes = [
-  #     {
-  #         name: "brownie",
-  #         ingriedients: ["chocolate", "cocoa powder", "flour", "eggs", "sugar", "butter"],
-  #         rating: 5
-  #     },
-  #     {
-  #         name: "lemon drizzle",
-  #         ingriedients: ["lemon juice", "flour", "eggs", "sugar", "butter"],
-  #         rating: 3
-  #     },
-  #     {
-  #         name: "carrot cake",
-  #         ingriedients: ["carrots", "raisins", "cinnamon", "flour", "eggs", "sugar", "butter"],
-  #         rating: 4
-  #     }   
-  #   ]
 
-  #   @kates_cakes = CakeShop.new(@cakes)
-  # end
 
+  def setup()
+    @room1 = Room.new("Blue", 10, 10)
+
+  
+    # @fish1 = Fish.new("Salmon")
+    # @fish2 = Fish.new("Guppy")
+    # @fish3 = Fish.new("Flounder")
+  
+    # @river = River.new([@fish1, @fish2, @fish3])
+
+  end
+
+
+def test_room_starts_empty
+  assert_equal(0, @room1.room_capacity)
+end
+ 
 end

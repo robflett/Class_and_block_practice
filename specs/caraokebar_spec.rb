@@ -38,4 +38,6 @@ class TestCaraoke < MiniTest::Test
     assert_equal("Dive", @caraokebar1.reputation)
   end
 
+  
+
 end
